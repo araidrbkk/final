@@ -1,0 +1,10 @@
+.header-brands{
+    overflow: hidden;
+}
+
+@media screen and (min-width:1440px){
+    .header-brands{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

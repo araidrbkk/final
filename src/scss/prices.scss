@@ -1,0 +1,96 @@
+.prices{
+    display: flex;
+    flex-direction: column;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    font-weight: 500;
+    color:#1B1C21;
+    border-radius: 6px;
+    flex-shrink: 0;
+    height: 200px;
+    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+        &:first-child{
+            display: none;
+    }
+        &__item{
+            margin: 16px;
+            position: relative;
+    
+        &--right{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            margin: 16px;
+        } 
+    }
+    & td:first-child::before{
+        content:'Ремонтные услуги';
+        display: block;
+        color: #7E7E82;
+        font-size: 14px;
+        line-height: 16px; 
+    }
+    & td:nth-child(2)::before{
+        content:'Цена';
+        display: block;
+        color: #7E7E82;
+        font-size: 14px;
+        line-height: 16px;    
+    }
+    & td:nth-child(3)::before{
+        content:'Срок';
+        display: block;
+        color: #7E7E82;
+        font-size: 14px;
+        line-height: 16px;    
+    }   
+    
+}
+
+@media screen and (min-width: 767px){
+    .prices{
+        display: table-row;
+        height: 54px;
+        background-color: #FFFFFF;
+    &__item{
+        padding-left: 16px;
+    }
+    & td:last-child{
+        position: relative;
+    } 
+    &:first-child{
+        display: table-header-group;
+        background-color: #F2F2F2;
+        & .prices__item{
+            font-family: "TT Lakes", sans-serif;
+            color: #7E7E82;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            opacity: 0.78;
+            background-color: #f8f8f8;
+        }        
+    }
+    
+    & td:nth-child(1)::before,
+    & td:nth-child(2)::before,
+    & td:nth-child(3)::before{
+        display: none;
+    }
+
+    &:not(:first-child){
+        border-left: 16px solid white;
+        border-right: 16px solid white;
+    }
+
+    &:not(:last-child):not(:first-child){
+        border-bottom: 1px solid #F2F2F2;
+    }
+}
+}

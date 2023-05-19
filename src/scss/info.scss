@@ -1,0 +1,31 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0; 
+    &__read{
+        overflow: hidden;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+    &__logo{
+        margin: 0 auto;
+    }       
+}
+
+@media (min-width:767px) {
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        &__read {
+            margin-left: 24px;
+        }
+    }
+}
+
+@media (min-width:1120px) {
+    .info{
+        &__read {
+        margin-left: 32px
+        }
+    }       
+}

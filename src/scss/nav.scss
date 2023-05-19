@@ -1,0 +1,34 @@
+.nav{
+    margin-left: 24px;
+    margin-top: 3px;
+    li{
+        display: block;
+        margin: 32px 0;
+    }
+    &__item{
+        position: relative;
+        font-family: "TT Lakes",sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        font-weight: 500; 
+        &:hover,
+        &:focus{
+            color:#7E7E82;
+        }       
+     }
+    &__item:hover::after,
+    &__item:focus::after{
+        content: "";
+        width: 4px;
+        height: 32px;
+        position: absolute;
+        left: -24px;
+        top: -4px;
+        border-right: #41F6D7 4px solid;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+ }

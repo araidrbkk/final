@@ -1,0 +1,158 @@
+.aside-feedback{ 
+    position: fixed;
+    height: 100%;
+    right: -600px;
+    top: 0px;
+    box-shadow: 
+    -16px 0px 52px 0px #0E185033,
+    -2px 0px 4px 0px #454F7E05;
+    transition: all 0.5s;
+    width: 320px;  
+    
+    &__container{
+        font-family: "TT Lakes", sans-serif;
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;       
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        margin-left: 16px;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color:#1B1C21;
+        font-weight: 900;
+        vertical-align: top;
+        margin-bottom: 24px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 1px;
+            height: 40px;
+            position: absolute;
+            left: -16px;
+            border: 2px solid #41f6d7;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }}
+
+    &__form-name,
+    &__form-email,
+    &__form-call{
+        border: 1px solid #f8f8f8;
+        color: #1B1C21; 
+        font-size: 16px;   
+        margin: 8px 16px;
+        height: 48px;
+        border-radius: 8px;
+        padding-left: 16px;
+        font-weight: 500;
+        
+    }
+    &__form-message{
+        height: 118px;
+        border: 1px solid #f8f8f8;
+        color: #1B1C21; 
+        font-size: 16px !important;   
+        margin: 8px 16px;
+        border-radius: 8px;
+        padding-left: 16px;
+        font-weight: 500;
+        padding-top: 12px;
+    }
+    &__form-text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+        margin: 16px;
+    }
+
+    &__form-link{
+        color:#FF3E79;
+    }
+
+    &__form-btn{
+        width: 136px;
+        height: 32px;
+        background-color: #FF3E79;
+        border-radius: 16px;
+        color:#FFFFFF;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-align: center;
+        font-weight: 900;
+        align-self: flex-end;
+        margin-right: 16px;
+        margin-top: 24px;
+        text-transform: uppercase;
+
+            &::after{    
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border: 2px solid #fff;
+                border-left: rgba(0,0,0,0);
+                border-bottom: rgba(0,0,0,0);
+                transform: rotate(45deg);
+                margin-left: 8px;
+            }
+
+            &:hover{
+                background-color: #ffffff;
+                color:#FF3E79;
+                border: 2px solid #FF3E79;
+            }
+
+            &:hover::after{
+                border: 2px solid #FF3E79;
+                border-left: rgba(0,0,0,0);
+                border-bottom: rgba(0,0,0,0);
+            }
+        }
+    &__burger{
+        background-color: transparent;
+        align-self: flex-start;
+        margin: 24px 0 40px 16px;
+        
+    }
+
+
+}
+
+.aside-feedback--open{
+    z-index: 130;
+    right: 0px; 
+    top: 0;      
+}
+
+@media screen and (min-width: 1440px) {
+    .aside-feedback{
+        width: 440px;
+    
+
+        &__container{
+            width: 440px;
+        }
+
+        &__burger{
+            position: absolute;
+            left:-72px;
+            margin-top: 40px;
+    }
+
+        &__title{
+            margin-top: 40px;
+    }
+}
+}

@@ -1,0 +1,13 @@
+.swiper-wrapper_brands{
+    margin-left: 16px;
+    display: flex; 
+}
+
+@media screen and (min-width: 767px) {
+.swiper-wrapper_brands{
+    flex-wrap: wrap;
+    padding-bottom: auto;
+    margin-left: 0px;
+    max-height: 180px;
+}      
+}

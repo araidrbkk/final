@@ -1,0 +1,14 @@
+.swiper-wrapper_prices{
+    display: flex; 
+    margin: 16px; 
+}
+
+@media screen and (min-width:767px){
+.swiper-wrapper_prices{
+    margin: 0;
+    display: table;
+    width: 100%;
+    background-color: #f8f8f8;                
+    } 
+    
+}

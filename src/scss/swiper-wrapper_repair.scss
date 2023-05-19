@@ -1,0 +1,13 @@
+.swiper-wrapper_repair{
+    margin-left: 16px;
+    display: flex; 
+}
+
+@media screen and (min-width: 767px) {
+.swiper-wrapper_repair{
+    flex-wrap: wrap;
+    padding-bottom: auto;
+    margin-left: 0px;
+    max-height: 160px;
+}      
+}

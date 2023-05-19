@@ -1,0 +1,15 @@
+.over{
+    max-height: fit-content;
+    
+ }
+ 
+ .arrows_rotate{
+     transition: all 0.3s;
+     transform: rotate(180deg);
+ }
+ 
+ .arrows_reverse{
+     transition: all 0.3s;
+     transform: rotate(-360deg);
+ }
+

@@ -1,0 +1,22 @@
+.off-link{
+    &__link{
+    font-family: "TT Lakes",sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color:#1B1C21;
+    }
+
+    &__link::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #FF3E79;
+    border-left: rgba(0,0,0,0);
+    border-bottom: rgba(0,0,0,0);
+    transform: rotate(45deg);
+    margin-left: 8px;
+}
+}

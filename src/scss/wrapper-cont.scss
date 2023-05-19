@@ -1,0 +1,14 @@
+.wrapper-cont {
+    margin:0 auto;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    flex-shrink: 0;
+}
+@media (min-width:1440px){
+    .wrapper-cont{
+        width: 1140px;
+        margin-left: 300px;
+        
+    }
+}

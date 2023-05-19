@@ -1,0 +1,18 @@
+.logo__main {
+    width: 320px;
+}
+
+@media (min-width:767px) {
+    .logo__main {
+        border-radius: 6px;
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1120px) {
+    .logo__main {
+        width: 531px;
+        border-radius: 6px;
+    }
+}
+
